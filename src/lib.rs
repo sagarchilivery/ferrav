@@ -2,3 +2,7 @@
 
 #![forbid(unsafe_code)]
 #![warn(missing_docs)]
+
+mod error;
+
+pub use error::Error;
