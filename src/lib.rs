@@ -4,5 +4,6 @@
 #![warn(missing_docs)]
 
 mod error;
+mod hash;
 
 pub use error::Error;
