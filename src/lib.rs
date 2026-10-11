@@ -16,4 +16,4 @@ pub use error::Error;
 pub use geometry::{ Point, Cell, Rotation };
 pub use rng::{ Rng, random_seed };
 pub use scene::{ Geometry, Shape, Scene };
-pub use style::{ Geometric, Style };
+pub use style::{ Geometric, Pixel, Style };

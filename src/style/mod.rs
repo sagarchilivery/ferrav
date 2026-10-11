@@ -1,10 +1,13 @@
 //! Styles decide what an avatar looks like.
 //!
-//! [`Geometric`] is the default look. Implement [`Style`] to add your own.
+//! ferrav ships two: [`Geometric`] (the default, a 4×4 symmetric look) and
+//! [`Pixel`] (GitHub-like). Implement [`Style`] to add your own.
 
 mod geometric;
+mod pixel;
 
 pub use geometric::Geometric;
+pub use pixel::Pixel;
 
 use crate::color::Palette;
 use crate::rng::Rng;
