@@ -7,7 +7,6 @@
 /// This is not cryptographically secure and should not be used for passwords
 /// or security-sensitive purposes. It is suitable for generating deterministic
 /// values such as avatar seeds.
-
 pub fn fnv1a(text: &str) -> u64 {
     const OFFSET_BASIS: u64 = 0xcbf29ce484222325;
     const PRIME: u64 = 0x100000001b3;
