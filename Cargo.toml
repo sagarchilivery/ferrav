@@ -10,7 +10,7 @@ repository = "https://github.com/sagarchilivery/ferrav"
 documentation = "https://docs.rs/ferrav"
 homepage = "https://github.com/sagarchilivery/ferrav"
 readme = "README.md"
-keywords = ["avatar", "identicon", "gravatar", "geometric", "svg", "png"]
+keywords = ["avatar", "identicon", "geometric", "svg", "png"]
 categories = ["graphics", "multimedia::images", "visualization"]
 include = [
     "src/**/*",
