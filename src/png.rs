@@ -15,7 +15,10 @@
 /// - `width * height * 4` doesn't fit in memory (`usize`)
 /// - `rgba.len()` is not exactly `width * height * 4`
 pub fn encode_png(width: u32, height: u32, rgba: &[u8]) -> Vec<u8> {
-    assert!(width > 0 && height > 0, "PNG images need at least 1x1 pixels");
+    assert!(
+        width > 0 && height > 0,
+        "PNG images need at least 1x1 pixels"
+    );
 
     let row_len = (width as usize)
         .checked_mul(4)

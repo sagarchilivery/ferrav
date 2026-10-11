@@ -37,9 +37,9 @@ const OUTER: [Template; 6] = [
 /// middle of the whole avatar, so these shapes meet in the middle.
 const CENTER: [Template; 6] = [
     Template::Polygon(&[(0.0, 0.0), (1.0, 0.0), (1.0, 1.0), (0.0, 1.0)]), // full square
-    Template::Polygon(&[(1.0, 0.0), (1.0, 1.0), (0.0, 1.0)]), // diamond in the middle
+    Template::Polygon(&[(1.0, 0.0), (1.0, 1.0), (0.0, 1.0)]),             // diamond in the middle
     Template::Polygon(&[(0.0, 0.0), (0.7, 0.3), (1.0, 1.0), (0.3, 0.7)]), // kite
-    Template::Polygon(&[(0.0, 0.0), (1.0, 0.0), (1.0, 1.0)]), // pinwheel blade
+    Template::Polygon(&[(0.0, 0.0), (1.0, 0.0), (1.0, 1.0)]),             // pinwheel blade
     Template::Polygon(&[(0.25, 0.25), (0.75, 0.25), (0.75, 0.75), (0.25, 0.75)]), // small square
     Template::Circle {
         cx: 1.0,
@@ -99,13 +99,7 @@ impl Style for Geometric {
             corner_color,
         );
         // Center shapes always start unrotated: they're drawn to meet in the middle.
-        stamp(
-            &mut shapes,
-            &CENTER_CELLS,
-            center_template,
-            0,
-            center_color,
-        );
+        stamp(&mut shapes, &CENTER_CELLS, center_template, 0, center_color);
         shapes
     }
 }

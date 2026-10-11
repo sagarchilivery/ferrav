@@ -234,9 +234,7 @@ impl AvatarBuilder {
     pub fn build(&self) -> Result<Avatar, Error> {
         self.validate()?;
 
-        let seed = self
-            .seed
-            .unwrap_or_else(|| self.mode.seed_for(&self.text));
+        let seed = self.seed.unwrap_or_else(|| self.mode.seed_for(&self.text));
 
         Ok(self.build_from_seed(seed))
     }

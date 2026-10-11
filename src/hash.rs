@@ -1,5 +1,5 @@
 //! Converts text into a deterministic number.
-//! 
+//!
 //! The same input always produces the same output.
 
 /// FNV-1a 64-bit hash function.
@@ -19,7 +19,6 @@ pub fn fnv1a(text: &str) -> u64 {
     }
     hash
 }
-
 
 #[cfg(test)]
 mod tests {

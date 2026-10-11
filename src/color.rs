@@ -166,11 +166,7 @@ impl ColorOptions {
 
         if !in_unit(self.saturation) {
             return Err(Error::InvalidColor(
-                format!(
-                    "saturation {} must be between 0.0 and 1.0",
-                    self.saturation
-                )
-                .into(),
+                format!("saturation {} must be between 0.0 and 1.0", self.saturation).into(),
             ));
         }
 
