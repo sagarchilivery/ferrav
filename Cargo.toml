@@ -1,10 +1,10 @@
 [package]
 name = "ferrav"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2024"
 rust-version = "1.85"
 authors = ["Sagar Chilivery <chiliverysagar@gmail.com>"]
-description = "A fast Rust library for generating deterministic geometric identicons and avatars from text, with SVG and PNG support."
+description = "Generate geometric identicon avatars from any text, deterministic or random, as SVG or PNG. Pure Rust."
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/sagarchilivery/ferrav"
 documentation = "https://docs.rs/ferrav"
