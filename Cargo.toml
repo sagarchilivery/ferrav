@@ -1,0 +1,39 @@
+[package]
+name = "ferrav"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+authors = ["Sagar Chilivery <chiliverysagar@gmail.com>"]
+description = "A fast Rust library for generating deterministic geometric identicons and avatars from text, with SVG and PNG support."
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/sagarchilivery/ferrav"
+documentation = "https://docs.rs/ferrav"
+homepage = "https://github.com/sagarchilivery/ferrav"
+readme = "README.md"
+keywords = ["avatar", "identicon", "gravatar", "geometric", "svg", "png"]
+categories = ["graphics", "multimedia::images", "visualization"]
+include = [
+    "src/**/*",
+    "Cargo.toml",
+    "README.md",
+    "LICENSE*",
+]
+
+[features]
+default = ["png"]
+png = ["dep:miniz_oxide"]
+
+[dependencies]
+miniz_oxide = { version = "0.9", optional = true }
+
+[dev-dependencies]
+png = "0.18"
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
+
+[profile.release]
+lto = true
+codegen-units = 1
+strip = true
