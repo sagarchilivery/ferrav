@@ -1,8 +1,8 @@
 # ferrav
 
-[![Crates.io](https://img.shields.io/crates/v/ferrav.svg)](https://crates.io/crates/ferrav)
-[![Docs.rs](https://docs.rs/ferrav/badge.svg)](https://docs.rs/ferrav)
-[![License](https://img.shields.io/crates/l/ferrav.svg)](#license)
+[![Crates.io](https://img.shields.io/crates/v/ferrav)](https://crates.io/crates/ferrav)
+[![Docs.rs](https://img.shields.io/docsrs/ferrav)](https://docs.rs/ferrav)
+[![License](https://img.shields.io/badge/license-MIT%20OR%20Apache--2.0-blue)](#license)
 [![CI](https://github.com/sagarchilivery/ferrav/actions/workflows/ci.yml/badge.svg)](https://github.com/sagarchilivery/ferrav/actions/workflows/ci.yml)
 
 **Turn any text into a unique little picture.** Give ferrav a username, an email or an ID, and it draws an avatar for it, as an **SVG** or a **PNG**. Same text, same picture, every time. Written in pure Rust.
