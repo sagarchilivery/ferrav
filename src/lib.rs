@@ -5,9 +5,11 @@
 
 mod color;
 mod error;
+mod geometry;
 mod hash;
 mod rng;
 
 pub use color::{ ColorOptions, Palette, Rgba };
 pub use error::Error;
+pub use geometry::{ Point, Cell, Rotation };
 pub use rng::{ Rng, random_seed };
