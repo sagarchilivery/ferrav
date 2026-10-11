@@ -30,7 +30,11 @@ miniz_oxide = { version = "0.9", optional = true }
 png = "0.18"
 
 [[example]]
-name = "generate"
+name = "basic"
+required-features = ["png"]
+
+[[example]]
+name = "advanced"
 required-features = ["png"]
 
 [[example]]
