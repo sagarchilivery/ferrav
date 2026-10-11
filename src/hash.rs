@@ -1,8 +1,12 @@
-//! Turns text into a number. Same text in, same number out, every time.
+//! Converts text into a deterministic number.
+//! 
+//! The same input always produces the same output.
 
-/// FNV-1a: a tiny, fast, well-known hash function.
+/// FNV-1a 64-bit hash function.
 ///
-/// Not safe for passwords or security, but perfect for picking avatar seeds.
+/// This is not cryptographically secure and should not be used for passwords
+/// or security-sensitive purposes. It is suitable for generating deterministic
+/// values such as avatar seeds.
 
 pub fn fnv1a(text: &str) -> u64 {
     const OFFSET_BASIS: u64 = 0xcbf29ce484222325;
