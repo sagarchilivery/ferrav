@@ -5,5 +5,7 @@
 
 mod error;
 mod hash;
+mod rng;
 
 pub use error::Error;
+pub use rng::{ Rng, random_seed };
