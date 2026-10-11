@@ -29,6 +29,14 @@ miniz_oxide = { version = "0.9", optional = true }
 [dev-dependencies]
 png = "0.18"
 
+[[example]]
+name = "generate"
+required-features = ["png"]
+
+[[example]]
+name = "readme_images"
+required-features = ["png"]
+
 [package.metadata.docs.rs]
 all-features = true
 rustdoc-args = ["--cfg", "docsrs"]
